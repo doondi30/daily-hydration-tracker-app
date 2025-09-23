@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydration Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">
+                <i class="fas fa-tint"></i>
+                <h1>Hydration Tracker</h1>
+            </div>
+            <button id="settings-btn" class="icon-btn" aria-label="Settings">
+                <i class="fas fa-cog"></i>
+            </button>
+        </header>
+
+        <main class="main-content">
+            <section class="water-display">
+                <div class="water-progress">
+                    <div class="wave-container">
+                        <div class="wave" id="water-wave"></div>
+                    </div>
+                    <div class="progress-info">
+                        <span id="current-amount">0</span>
+                        <span class="divider">/</span>
+                        <span id="goal-amount">2000</span>
+                        <span class="unit">ml</span>
+                    </div>
+                </div>
+                <div class="percentage-circle">
+                    <svg viewBox="0 0 36 36" class="circular-chart">
+                        <path class="circle-bg" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <path id="percentage-circle" class="circle-fill" stroke-dasharray="0, 100" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <text x="18" y="20.5" class="percentage-text" id="percentage-text">0%</text>
+                    </svg>
+                </div>
+            </section>
+
+            <section class="intake-controls">
+                <h2>Add Water Intake</h2>
+                <div class="quick-add-btns">
+                    <button class="intake-btn" data-amount="250">250ml</button>
+                    <button class="intake-btn" data-amount="500">500ml</button>
+                    <button class="intake-btn" data-amount="750">750ml</button>
+                    <button id="reset-btn" class="reset-btn">Reset Day</button>
+                </div>
+                <div class="custom-add">
+                    <input type="number" id="custom-amount" placeholder="Enter amount in ml" min="0">
+                    <button id="add-custom-btn">Add</button>
+                </div>
+            </section>
+
+            <section class="history-section">
+                <div class="section-header">
+                    <h2>Today's History</h2>
+                    <button id="view-all-btn">View All</button>
+                </div>
+                <div class="history-list" id="today-history">
+                    <div class="empty-state">
+                        <i class="fas fa-glass-water"></i>
+                        <p>No entries yet today</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stats-section">
+                <h2>Daily Stats</h2>
+                <div class="stats-cards">
+                    <div class="stat-card">
+                        <div class="stat-value" id="streak-days">0</div>
+                        <div class="stat-label">Day Streak</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="weekly-avg">0ml</div>
+                        <div class="stat-label">Weekly Avg</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="completion-rate">0%</div>
+                        <div class="stat-label">Completion</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="modal" id="settings-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Settings</h3>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="daily-goal">Daily Water Goal (ml)</label>
+                        <input type="number" id="daily-goal" min="500" max="5000" value="2000">
+                    </div>
+                    <div class="form-group">
+                        <label for="reminder-frequency">Reminder Frequency</label>
+                        <select id="reminder-frequency">
+                            <option value="0">No reminders</option>
+                            <option value="30">Every 30 minutes</option>
+                            <option value="60">Every hour</option>
+                            <option value="120">Every 2 hours</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="wake-up-time">Wake Up Time</label>
+                        <input type="time" id="wake-up-time" value="08:00">
+                    </div>
+                    <div class="form-group">
+                        <label for="bedtime">Bedtime</label>
+                        <input type="time" id="bedtime" value="22:00">
+                    </div>
+                    <div class="form-group">
+                        <label for="theme">Theme Color</label>
+                        <select id="theme">
+                            <option value="blue">Blue</option>
+                            <option value="teal">Teal</option>
+                            <option value="purple">Purple</option>
+                            <option value="green">Green</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="save-settings">Save Settings</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="history-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Drinking History</h3>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="time-period-selector">
+                        <button class="period-btn active" data-period="today">Today</button>
+                        <button class="period-btn" data-period="week">This Week</button>
+                        <button class="period-btn" data-period="month">This Month</button>
+                    </div>
+                    <div class="history-chart-container">
+                        <canvas id="history-chart"></canvas>
+                    </div>
+                    <div class="detailed-history" id="detailed-history">
+                        <!-- History items will be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="notification" id="reminder-notification">
+            <div class="notification-content">
+                <i class="fas fa-bell"></i>
+                <p>Time to drink some water!</p>
+                <button class="dismiss-btn">Dismiss</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
