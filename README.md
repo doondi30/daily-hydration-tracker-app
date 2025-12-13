@@ -43,10 +43,10 @@ Here’s a look at the **Entrix Transport Management System** interface:
   <img width="1244" height="726" alt="image" src="https://github.com/user-attachments/assets/9c628d79-f7b7-4188-b25d-4e75513fbd2c" />
 
 - *Settings for Customized User Interface*  
-  [![Recording 2025-12-13 200502](https://github.com/user-attachments/assets/fa515340-1eaa-460d-8734-79fb0a31c483)](https://github.com/user-attachments/assets/fa515340-1eaa-460d-8734-79fb0a31c483)
+  <img width="1000" height="600" alt="Settings GIF" src="https://github.com/user-attachments/assets/fa515340-1eaa-460d-8734-79fb0a31c483" />
 
 - *Progress bar*  
-  [![Recording 2025-12-13 201032](https://github.com/user-attachments/assets/4eb36d4f-6e7f-4e8b-9ba4-e57f0cbf765a)](https://github.com/user-attachments/assets/4eb36d4f-6e7f-4e8b-9ba4-e57f0cbf765a)
+  <img width="1000" height="600" alt="Progress bar GIF" src="https://github.com/user-attachments/assets/4eb36d4f-6e7f-4e8b-9ba4-e57f0cbf765a" />
 
   
 
