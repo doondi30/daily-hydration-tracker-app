@@ -52,8 +52,8 @@ Here’s a look at the **Entrix Transport Management System** interface:
 
 ## Links 📌
 
-- Live Site URL:  
-- Project Repository: [Click Here]
+- Live Site URL: [Click Here](https://doondi30.github.io/daily-hydration-tracker-app/) 
+- Project Repository: [Click Here](https://github.com/doondi30/daily-hydration-tracker-app)
 - Let's Connect: [LinkedIn](https://www.linkedin.com/in/doondi)
 
   
