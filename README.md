@@ -1,4 +1,4 @@
-![Recording 2025-12-17 212159](https://github.com/user-attachments/assets/7eaee125-eb32-4e51-b173-d840ff10b8c1)# 💧 Hydration Tracker
+# 💧 Hydration Tracker
 This app helps you monitor your daily water intake, track progress toward your hydration goals, and maintain healthy habits.
 
 ## 🚀 How to Use
