@@ -1,4 +1,4 @@
-# 💧 Hydration Tracker
+![Recording 2025-12-17 212159](https://github.com/user-attachments/assets/7eaee125-eb32-4e51-b173-d840ff10b8c1)# 💧 Hydration Tracker
 This app helps you monitor your daily water intake, track progress toward your hydration goals, and maintain healthy habits.
 
 ## 🚀 How to Use
@@ -43,11 +43,11 @@ Here’s a look at the **Entrix Transport Management System** interface:
   <img width="1244" height="726" alt="image" src="https://github.com/user-attachments/assets/9c628d79-f7b7-4188-b25d-4e75513fbd2c" />
 
 - *Settings for Customized User Interface*  
-  <img width="1000" height="600" alt="Settings GIF" src="https://github.com/user-attachments/assets/fa515340-1eaa-460d-8734-79fb0a31c483" />
+![Recording 2025-12-17 212159](https://github.com/user-attachments/assets/7de103f7-a5a0-4422-ae1a-a2d8f312ad31)
 
 - *Progress bar*  
   
-  ![Recording 2025-12-17 211131](https://github.com/user-attachments/assets/547f975c-ed22-46fc-ae8d-d8efd50c651f)
+![Recording 2025-12-17 211750](https://github.com/user-attachments/assets/f4192b28-c616-4322-90dc-a55da07a7973)
 
 
   
