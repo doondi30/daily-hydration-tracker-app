@@ -1,4 +1,4 @@
-# 💧 Hydration Tracker
+# 💧 Water Tracker
 This app helps you monitor your daily water intake, track progress toward your hydration goals, and maintain healthy habits.
 
 ## 🚀 How to Use
@@ -37,7 +37,7 @@ This app helps you monitor your daily water intake, track progress toward your h
 
 ## Screenshots 🖼️
 
-Here’s a look at the **Entrix Transport Management System** interface:
+Here’s a look at the **Water intake tracker** interface:
 
 - **Desktop version**  
   <img width="1244" height="726" alt="image" src="https://github.com/user-attachments/assets/9c628d79-f7b7-4188-b25d-4e75513fbd2c" />
@@ -49,8 +49,10 @@ Here’s a look at the **Entrix Transport Management System** interface:
   
 ![Recording 2025-12-17 211750](https://github.com/user-attachments/assets/f4192b28-c616-4322-90dc-a55da07a7973)
 
-
+- **Mobile version**
   
+<img width="1920" height="1080" alt="water-mobile-snapshot" src="https://github.com/user-attachments/assets/96f46057-e0f6-49c2-862f-649d0d365ed1" />
+
 
 ## Links 📌
 
